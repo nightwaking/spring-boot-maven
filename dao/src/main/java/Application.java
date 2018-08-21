@@ -10,6 +10,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class Application extends SpringBootServletInitializer {
 		/**
 		 * 修改启动类，继承SpringBootServletInitializer 并重写configure方法
+		 * Application 会扫描Application同级及以下的所有包内注解
+		 * @Service @Component @Controller @Repository不使用注解会出现 Bean未注册的错误
 		 * @param application
 		 * @return
 		 */
