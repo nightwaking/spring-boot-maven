@@ -38,6 +38,8 @@
     </appender>
 
     <!-- 按日期区分的滚动日志 -->
+    <!-- 用来格式化日志输出节点，class用来指定输出策略，常用的是控制台输出策略和文件输出策略 RollingFileAppender
+    用于切分文件-->
     <appender name="ERROR-OUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>web/logs/web-error.log</file>
         <encoder>

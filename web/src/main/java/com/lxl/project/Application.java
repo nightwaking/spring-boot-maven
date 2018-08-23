@@ -7,6 +7,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 /**
  * 开启自动配置
+ * @SpringBootApplication是一个组合注解
+ * 组合了 @Configuration、
+ * @EnableAutoConfiguration、根据类路径中的jar包依赖为当前项目进行自动配置
+ * @ComponentScan
+ * 关闭特定的自动配置应用使用@SpringBootApplication注解的exclude参数
+ * @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
  */
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
