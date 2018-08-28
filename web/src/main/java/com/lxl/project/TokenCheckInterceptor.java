@@ -8,6 +8,9 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 路由拦截，验证token
+ */
 @Component
 public class TokenCheckInterceptor extends HandlerInterceptorAdapter {
 	@Autowired
